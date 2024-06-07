@@ -14,3 +14,21 @@
 4. Glue Catalog
 5. EC2
 - Apache Kafka
+
+## Workflow:
+
+* Producer: A Python-based stock market app simulation uses Boto3 to send data to Kafka running on an EC2 instance.
+*  Consumer: Kafka consumers process the data, storing it in Amazon S3.
+* Data Cataloging: AWS Glue Crawler organizes the data, and Glue Catalog facilitates querying with AWS Athena.
+
+## Steps to Run:
+
+1. Set up the Kafka broker on an EC2 instance.
+2. Run the producer script to simulate stock market data and send it to Kafka.
+3. Deploy the consumer script to process and store data in S3.
+4. Configure AWS Glue Crawler to catalog the data.
+5. Use AWS Athena to query the processed data.
+
+
+# Impact:
+Real-time data processing is essential in the financial industry to ensure accurate, timely decision-making and to optimize investment strategies, ultimately leading to improved financial performance and market insights.
